@@ -1,0 +1,18 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Florian Stellbrink"
+theme = "flo.stellbr.ink"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+pluralizelisttitles = false
+
+[permalinks]
+    portfolio = "/portfolio/:slug"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio"
+    weight = 2
