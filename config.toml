@@ -12,7 +12,13 @@ pluralizelisttitles = false
     name = "Home"
     url = "/"
     weight = 1
+
 [[menu.main]]
-    name = "Portfolio"
-    url = "/portfolio"
+    name = "GitHub"
+    url = "https://github.com/flostellbrink"
+    weight = 2
+
+[[menu.main]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/flostellbrink/"
     weight = 2

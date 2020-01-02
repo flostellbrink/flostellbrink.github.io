@@ -1,10 +1,8 @@
 ---
-title: Chess Game Markdown
+title: Chess Game
 author: Florian Stellbrink
 date: '2019-10-05'
-slug: chess md
+slug: chess
 ---
-
-# Chess Game
 
 Who's a good chess game? Yes you are!

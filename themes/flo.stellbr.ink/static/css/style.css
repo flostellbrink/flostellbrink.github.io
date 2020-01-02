@@ -1,50 +1,92 @@
 body {
-  max-width: 800px;
-  margin: auto;
-  padding: 1em;
-  line-height: 1.5em;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr minmax(0px, 340px) minmax(0px, 340px) 1fr;
 }
 
-/* header */
-.menu { padding: 0; }
-.menu li { display: inline-block; }
-.article-meta, .menu a {
-  text-decoration: none;
-  background: #eee;
-  padding: 5px;
-  border-radius: 5px;
-}
-.menu, .article-meta { text-align: center; }
-.title { font-size: 1.1em; }
-hr {
-  border-style: dashed;
-  color: #ddd;
+img,
+iframe,
+video {
+  max-width: 100%;
 }
 
-/* code */
-pre {
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
-  padding: 1em;
-  overflow-x: auto;
-}
-code { background: #f9f9f9; }
-pre code { background: none; }
-
-/* misc elements */
-img, iframe, video { max-width: 100%; }
-main { hyphens: auto; }
-blockquote {
-  background: #f9f9f9;
-  border-left: 5px solid #ccc;
-  padding: 3px 1em 3px;
+nav {
+  grid-row: 1;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
-table {
-  margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+main {
+  grid-row: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
-table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-thead, tr:nth-child(even) { background: #eee; }
+
+.footer {
+  grid-row: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.sidebar {
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.sidebar div {
+  display: inline-block;
+}
+
+.sidebar p:first-of-type {
+  font-size: 1.15em;
+}
+
+.sidebar p {
+  margin: 0;
+  text-align: justify;
+  width: 100%;
+}
+
+.sidebar img {
+  border-radius: 0.5em;
+  margin-right: 0.2em;
+  width: 42px;
+}
+
+@media(min-width: 600px) {
+  nav {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .sidebar {
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+
+@media(min-width: 1000px) {
+  nav {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .sidebar {
+    grid-row: 3;
+    grid-column: 1;
+    width: 175px;
+    justify-self: center;
+  }
+
+  .sidebar p:first-of-type {
+    margin-top: 0.5em;
+    font-size: 1.15em;
+  }
+
+  .sidebar img {
+    width: 100%;
+    border-radius: 1em;
+  }
+}

@@ -1,7 +1,43 @@
-body {
-  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+:root {
+  --background: #ffffff;
+  --text-color: #555555;
+  --text-color-header: #0a1922;
+  --text-color-light: #707070;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #242424;
+    --text-color: #eeeeee;
+    --text-color-header: #eeeeee;
+    --text-color-light: #eeeeee;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: unset;
+  color: var(--text-color-header);
+  margin-top: 0;
+}
+
 code {
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
+}
+
+.subtitle {
+  margin-block-start: -1em;
+  color: var(--text-color-light);
 }

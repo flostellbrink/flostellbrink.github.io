@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Home
+# About me
 
 Hi! My name is Flo. I make software for fun and profit.
 

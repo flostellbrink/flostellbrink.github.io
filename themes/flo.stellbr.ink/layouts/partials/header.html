@@ -6,14 +6,21 @@
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
+
+  <div class="sidebar">
+    <img src="/images/profile.jpg" />
+    <div>
+      <p>Florian Stellbrink</p>
+      <p class="subtitle">Software Developer</p>
+    </div>
+  </div>
 
   <body>
     <nav>
-    <ul class="menu">
       {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
       {{ end }}
-    </ul>
-    <hr/>
     </nav>
