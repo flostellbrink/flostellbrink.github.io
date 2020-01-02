@@ -6,8 +6,10 @@
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/css/octo.css" | relURL }}" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <div class="sidebar">
@@ -21,6 +23,6 @@
   <body>
     <nav>
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      <a class="underline" href="{{ .URL | relURL }}">{{ .Name }}</a>
       {{ end }}
     </nav>
