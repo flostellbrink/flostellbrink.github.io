@@ -5,18 +5,25 @@
 {{ end }}
 
 <main>
-{{ .Content }}
+  {{ .Content }}
 </main>
 
-<ul class="footer">
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
-  <li>
-    <span class="date">{{ .Date.Format "January 2006" }} - </span>
-    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-  </li>
+<div class="footer">
+  {{ range .Site.RegularPages.GroupByDate "2006" }}
+  {{ $page := index .Pages 0 }}
+  <h2>{{ .Key }}</h2>
+  <div class="card-grid">
+    {{ range .Pages.ByDate }}
+    <a class="card" href="{{ .Permalink }}">
+      <img src="/images/{{ .Param "teaser" }}" style="display: block"></img>
+      <div class="card-body">
+        <h3>{{ .Title }}</h3>
+        <p class="subtitle card-text">{{ .Summary }}</p>
+      </div>
+    </a>
+    {{ end }}
+  </div>
   {{ end }}
-</ul>
+</div>
 
 {{ partial "footer.html" . }}

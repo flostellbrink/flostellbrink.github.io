@@ -19,7 +19,7 @@
     {{ end }}
 
     <div class="article-meta">
-        {{ if (gt .Params.date 0) }}<p class="date subtitle">{{ .Date.Format "2. January 2006" }}</p>{{ end }}
+        {{ if (gt .Params.date 0) }}<p class="subtitle">{{ .Date.Format "2. January 2006" }}</p>{{ end }}
     </div>
 
     {{ .Content }}

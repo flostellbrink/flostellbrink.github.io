@@ -1,6 +1,6 @@
 ---
 title: Chess Game
-excerpt: A game of chess with runtime geometry generation.
+summary: A game of chess with runtime geometry generation.
 teaser: chess.jpg
 github: Chess
 date: '2019-10-05'
