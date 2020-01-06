@@ -8,9 +8,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #242424;
-    --text-color: #eeeeee;
-    --text-color-header: #eeeeee;
-    --text-color-light: #eeeeee;
+    --text-color: #cccccc;
+    --text-color-header: #ffffff;
+    --text-color-light: #888;
   }
 }
 
