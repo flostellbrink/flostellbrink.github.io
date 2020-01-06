@@ -3,6 +3,7 @@
 <main>
   {{if not .IsHome }}
   <h1>{{ .Title | markdownify }}</h1>
+  <meta http-equiv="refresh" content="0; url=/">
   {{ end }}
 
   {{ .Content }}
