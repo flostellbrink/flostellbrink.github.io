@@ -22,3 +22,6 @@ pluralizelisttitles = false
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/flostellbrink/"
     weight = 2
+
+[markup.goldmark.renderer]
+    unsafe = true
