@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://flo.stellbr.ink"
 languageCode = "en-us"
 title = "Florian Stellbrink"
 theme = "flo.stellbr.ink"
