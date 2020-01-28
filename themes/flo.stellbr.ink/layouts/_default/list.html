@@ -4,6 +4,7 @@
   {{if not .IsHome }}
   <h1>{{ .Title | markdownify }}</h1>
   <meta http-equiv="refresh" content="0; url=/">
+  <meta name="robots" content="noindex">
   {{ end }}
 
   {{ .Content }}
