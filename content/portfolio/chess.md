@@ -107,7 +107,7 @@ You can check out the source on [GitHub](https://github.com/flostellbrink/Chess)
     preRun: [],
     postRun: [],
     locateFile: function(path, prefix) {
-      return "https://flo.stellbr.ink/Chess/" + path;
+      return "https://flostellbrink.github.io/Chess/" + path;
     },
     print: (function() {
       return function(text) {
@@ -148,5 +148,5 @@ You can check out the source on [GitHub](https://github.com/flostellbrink/Chess)
   window.addEventListener("resize", resize);
   window.addEventListener("fullscreenchange", resize);
 </script>
-<script async type="text/javascript" src="https://flo.stellbr.ink/Chess/index.js"></script>
+<script async type="text/javascript" src="https://flostellbrink.github.io/Chess/index.js"></script>
 
