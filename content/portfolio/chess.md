@@ -1,9 +1,9 @@
 ---
 title: Chess Game
 summary: A game of chess with runtime geometry generation.
-teaser: chess.jpg
+teaser: chess/teaser.jpg
 github: Chess
-date: '2019-10-05'
+date: "2019-10-05"
 slug: chess
 ---
 
@@ -43,7 +43,7 @@ yourself, you can disable the "AI" with this checkbox:
 </label>
 
 <div id="container" style="position: relative">
-  <img src="/images/chess-placeholder.jpg" style="display: block; z-index: -2"></img>
+  <img src="/images/chess/placeholder.jpg" style="display: block; z-index: -2"></img>
   <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1 style="position: absolute; left: 0; top: 0; touch-action: none"></canvas>
   <div id="progress" style="position:absolute; top: 0; right: 0; height: 100%; width: 100%; background: black; opacity: .25"></div>
   <div style="position: absolute; bottom: 0; right: 0">
@@ -149,4 +149,3 @@ You can check out the source on [GitHub](https://github.com/flostellbrink/Chess)
   window.addEventListener("fullscreenchange", resize);
 </script>
 <script async type="text/javascript" src="https://flostellbrink.github.io/Chess/index.js"></script>
-
