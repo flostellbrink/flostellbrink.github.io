@@ -1,10 +1,22 @@
 :root {
+  --background: #ffffff;
+  --text-color: #555555;
+  --text-color-header: #0a1922;
+  --text-color-light: #707070;
   --shadow-color: #eeeeee;
+  --icon-color: #ffffff;
+  --underline-color: #bdc1c4;
+  --github-icon-color: #24292f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --background: #242424;
+    --text-color: #cccccc;
+    --text-color-header: #ffffff;
+    --text-color-light: #888;
     --shadow-color: #191919;
+    --github-icon-color: #ffffff;
   }
 }
 
@@ -19,6 +31,16 @@ img,
 iframe,
 video {
   max-width: 100%;
+}
+
+.header-with-logo {
+  display: flex;
+  gap: 0.5em;
+}
+
+.header-with-logo > a {
+  display: flex;
+  align-items: center;
 }
 
 nav {
@@ -119,7 +141,7 @@ main {
 .material-icons {
   display: block !important;
   font-size: 48px !important;
-  color: #fff;
+  color: var(--icon-color);
 }
 
 .underline {
@@ -133,7 +155,7 @@ main {
   left: 0;
   bottom: 0;
   height: 4px;
-  background: #bdc1c4;
+  background: var(--underline-color);
   width: 100%;
   transition: transform 0.2s ease-in-out;
   transform: scaleX(0);
@@ -181,4 +203,8 @@ main {
   .card {
     border-radius: 1em;
   }
+}
+
+.github-icon {
+  fill: var(--github-icon-color);
 }
