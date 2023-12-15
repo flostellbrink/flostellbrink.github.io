@@ -19,6 +19,12 @@ h6 {
   font-weight: unset;
   color: var(--text-color-header);
   margin-top: 0;
+  text-wrap: balance;
+}
+
+p {
+  word-break: break-word;
+  text-align: justify;
 }
 
 code {
