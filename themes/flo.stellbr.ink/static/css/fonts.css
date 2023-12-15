@@ -22,11 +22,6 @@ h6 {
   text-wrap: balance;
 }
 
-p {
-  word-break: break-word;
-  text-align: justify;
-}
-
 code {
   font-family: "Lucida Console", Monaco, monospace;
 }
