@@ -21,16 +21,50 @@
 }
 
 body {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: 1fr minmax(0px, 340px) minmax(0px, 340px) 1fr;
-  overflow-y: scroll;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--background);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: unset;
+  color: var(--text-color-header);
+  margin-top: 0;
+  text-wrap: balance;
+}
+
+a {
+  color: var(--text-color);
+}
+
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.subtitle {
+  margin-block-start: -1em;
+  color: var(--text-color-light);
+}
+
 
 img,
 iframe,
 video {
   max-width: 100%;
+}
+
+.layout {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr minmax(0px, 340px) minmax(0px, 340px) 1fr;
+  overflow-y: scroll;
 }
 
 .header-with-logo {

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark" />
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "/css/octo.css" | relURL }}" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CX6FRB84RG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-CX6FRB84RG');
-    </script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark" />
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CX6FRB84RG"></script>
+</head>
+
+<body class="layout">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CX6FRB84RG');
+  </script>
 
   <div class="sidebar">
     <img src="https://avatars.githubusercontent.com/u/2600682" />
@@ -30,9 +30,8 @@
     </div>
   </div>
 
-  <body>
-    <nav>
-      {{ range .Site.Menus.main }}
-      <a class="underline" href="{{ .URL | relURL }}">{{ .Name }}</a>
-      {{ end }}
-    </nav>
+  <nav>
+    {{ range .Site.Menus.main }}
+    <a class="underline" href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
